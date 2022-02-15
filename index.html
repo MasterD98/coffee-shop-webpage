@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Coffee Spot, A Coffee for Everyone! located in Sri Lanka."
+    />
+    <meta name="keywords" content="coffee" />
+    <title>The Coffee Spot</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/2935/2935413.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style>
+      /* scrollbar */
+
+      html::-webkit-scrollbar {
+        width: 10px;
+      }
+      html::-webkit-scrollbar-track {
+        background: #3d2d1f;
+      }
+      html::-webkit-scrollbar-thumb {
+        background: #634933;
+        border-radius: 5px;
+      }
+      @supports (scrollbar-width: thin) {
+        html {
+          scrollbar-width: thin;
+          scrollbar-color: #634933 #3d2d1f;
+        }
+      }
+
+      /* typography */
+      html {
+        font-size: 62.5%;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(
+            rgba(63, 49, 33, 0.6),
+            rgba(0, 0, 0, 0.3),
+            rgba(63, 49, 33, 0.5)
+          ),
+          url("https://images.pexels.com/photos/887723/pexels-photo-887723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=853&w=1280");
+        background-size: cover;
+        background-attachment: fixed;
+        cursor: default;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* hero */
+
+      .hero {
+        height: 100vh;
+        text-align: center;
+        color: white;
+        margin: 20rem 0;
+      }
+      .container-sm {
+        max-width: 1140px;
+        margin: auto;
+      }
+      .hero__header {
+        font-size: 11rem;
+        letter-spacing: 0.1rem;
+        text-transform: capitalize;
+      }
+      .hero__tagline {
+        font-size: 3.5rem;
+      }
+
+      .card-container {
+        display: grid;
+        width: 100%;
+        gap: 3rem;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .card-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .card {
+        max-width: 400px;
+        border-radius: 5px;
+        color: #634933;
+        background-color: white;
+      }
+
+      .card__body {
+        margin: 1rem;
+      }
+
+      .card__image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      footer {
+        width: 100%;
+        position: relative;
+      }
+
+      .web {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        width: 18px;
+        height: 18px;
+        color: white;
+        border-radius: 100%;
+        transition: color 0.3s;
+      }
+
+      .web:hover,
+      .web:focus {
+        color: #eec373;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container-sm">
+      <section class="hero">
+        <h1 class="hero__header">The Coffee Spot</h1>
+        <h2 class="hero__tagline">A Coffee for Everyone!</h2>
+      </section>
+
+      <section class="card-container">
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/caramel-macchiato.html" target="blank">
+                <img
+                  src="https://www.julieseatsandtreats.com/wp-content/uploads/2021/08/Caramel-Macchiato-17-of-30-1024x1536.jpg"
+                  alt="A photo of Caramel Macchiato"
+                />
+              </a>
+            </div>
+            <h2>Caramel Macchiato</h2>
+            <h2>Rs: 100.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/black-eye.html" target="blank">
+                <img
+                  src="https://coffeeaffection.com/wp-content/uploads/2020/12/Black-Coffee.webp"
+                  alt="A photo of Black Eye"
+                />
+              </a>
+            </div>
+            <h2>Black Eye</h2>
+            <h2>Rs: 150.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/mocha.html" target="blank">
+                <img
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/mocha-001-8301418.jpg?quality=90&webp=true&resize=375,341"
+                  alt="A photo of Mocha"
+                />
+              </a>
+            </div>
+            <h2>Mocha</h2>
+            <h2>Rs: 170.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/cappuccino.html" target="blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Italian_breakfast_cappucino%2C_Esino_Lario.jpg/330px-Italian_breakfast_cappucino%2C_Esino_Lario.jpg"
+                  alt="A photo of Cappuccino"
+                />
+              </a>
+            </div>
+            <h2>Cappuccino</h2>
+            <h2>Rs: 250.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/cold-brew-coffee.html" target="blank">
+                <img
+                  src="https://www.simplyrecipes.com/thmb/58xMQLVM9lyDMCWulp2Xb6So_BY=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2016__07__2016-07-5-HT-Cold-Brew-29-84d816b1d44e48f7ad34bd3721f250af.jpg"
+                  alt="A photo of Cold Brew Coffee"
+                />
+              </a>
+            </div>
+            <h2>Cold Brew Coffee</h2>
+            <h2>Rs: 260.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/Latte.html" target="blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Latte_art_3.jpg/330px-Latte_art_3.jpg"
+                  alt="A photo of Latte"
+                />
+              </a>
+            </div>
+            <h2>Latte</h2>
+            <h2>Rs: 350.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/flat-white.html" target="blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg/330px-Flat_white_coffee_with_pretty_feather_pattern.jpg"
+                  alt="A photo of Flat white"
+                />
+              </a>
+            </div>
+            <h2>Flat white</h2>
+            <h2>Rs: 350.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/irish-coffee.html" target="blank">
+                <img
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/irish_coffee-5c6049f.jpg?quality=90&webp=true&resize=375,341"
+                  alt="A photo of Irish Coffee"
+                />
+              </a>
+            </div>
+            <h2>Irish Coffee</h2>
+            <h2>Rs: 450.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/americano.html" target="blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg/375px-Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg"
+                  alt="A photo of Americano"
+                />
+              </a>
+            </div>
+            <h2>Americano</h2>
+            <h2>Rs: 150.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <div class="card__image">
+              <a href="coffee_pages/espresso.html" target="blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg/330px-Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg"
+                  alt="A photo of Espresso"
+                />
+              </a>
+            </div>
+            <h2>Espresso</h2>
+            <h2>Rs: 250.00</h2>
+            <hr />
+            <h3>Address: The Coffee Spot, Sri Lanka</h3>
+            <h3>Email: coffeespot@me.com</h3>
+            <h3>Phone No: 0771234567</h3>
+            <footer>
+              <h3>
+                For more details:
+                <a href="company/about.html" target="blank">The Coffee Spot</a>
+              </h3>
+            </footer>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="web-container"
+        href="https://vinodliyanage.github.io/"
+        target="blank"
+      >
+        <svg
+          class="web"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+          />
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>
